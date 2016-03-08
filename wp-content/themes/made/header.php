@@ -35,6 +35,11 @@
 			<header class="header clear" role="banner">
 				<div class="container">
 
+					<div class="callouts">
+						<?php wp_nav_menu( array( 'theme_location' => 'header-callouts' ) ); ?>
+					</nav>
+
+
 					<!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">

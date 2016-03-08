@@ -7,7 +7,7 @@ var cssnano = require('gulp-cssnano');
 // Styles
 gulp.task('styles', function() {
   return sass('sass/style.scss', { style: 'expanded' })
-    .pipe(gulp.dest('../html5blank'))
+    .pipe(gulp.dest('../made'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
     .pipe(notify({ message: 'Styles task complete' }));

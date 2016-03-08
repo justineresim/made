@@ -1,4 +1,4 @@
-<?php /* Template Name: Testing Page Template */ get_header(); ?>
+<?php /* Template Name: Testing Styles Template */ get_header(); ?>
 <div class="container full-width">
     <div class="testing">
         <a class="testing-arrow-up testing-scroll-up"><span class="fa fa-chevron-up"></span></a>

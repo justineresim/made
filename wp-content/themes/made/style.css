@@ -204,11 +204,11 @@ a.g-link-color-secondary:hover, a.g-link-color-secondary:focus, a.g-link-color-s
    Global Mixins
    ========================================================================== */
 /*
-	Theme Name: HTML5 Blank
+	Theme Name: Mindfully Made Canada
 	Theme URI: http://html5blank.com
-	Description: HTML5 Blank WordPress Theme
+	Description: Mindfully Made Canada WordPress Theme
 	Version: 1.4.3
-	Author: Todd Motto (@toddmotto)
+	Author: Todd Motto (@toddmotto), Justine Lileikis
 	Author URI: http://toddmotto.com
 	Tags: Blank, HTML5, CSS3
 
@@ -761,7 +761,7 @@ select.g-form-control {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  background: url(/wp-content/themes/html5blank/img/dropdown-arrows.png) no-repeat right #ffffff;
+  background: url(/wp-content/themes/made/img/dropdown-arrows.png) no-repeat right #ffffff;
   cursor: pointer;
 }
 
@@ -1906,45 +1906,45 @@ main, aside.sidebar {
 /* ==========================================================================
    Global Style Guide Page --- This file is just for this testing/style guide site - NOT part pf global CSS
    ========================================================================== */
-body.testing .g-container {
+.testing .g-container {
   position: relative;
 }
-body.testing .g-container .testing-body-container {
+.testing .g-container .testing-body-container {
   margin-left: 200px;
 }
 @media (max-width: 920px) {
-  body.testing .g-container .testing-body-container {
+  .testing .g-container .testing-body-container {
     margin-left: 0;
   }
 }
-body.testing .g-container .testing-sidebar {
+.testing .g-container .testing-sidebar {
   position: fixed;
   width: 170px;
 }
-body.testing .g-container .testing-sidebar ul.testing-menu {
+.testing .g-container .testing-sidebar ul.testing-menu {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: right;
 }
-body.testing .g-container .testing-sidebar ul.testing-menu li {
+.testing .g-container .testing-sidebar ul.testing-menu li {
   margin: 0 3px;
 }
-body.testing .g-container .testing-sidebar ul.testing-menu li a {
+.testing .g-container .testing-sidebar ul.testing-menu li a {
   padding: 5px 10px;
   border-radius: 0;
   display: inline-block;
   text-decoration: none;
 }
-body.testing .g-container .testing-sidebar ul.testing-menu li a.active {
+.testing .g-container .testing-sidebar ul.testing-menu li a.active {
   text-decoration: underline;
 }
 @media (max-width: 920px) {
-  body.testing .g-container .testing-sidebar {
+  .testing .g-container .testing-sidebar {
     display: none;
   }
 }
-body.testing pre {
+.testing pre {
   padding: 12px;
   margin: 1.5em 0 4em;
   font-size: 15px;
@@ -1959,10 +1959,10 @@ body.testing pre {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-weight: normal;
 }
-body.testing pre xmp {
+.testing pre xmp {
   margin: 0;
 }
-body.testing .testing-arrow-up {
+.testing .testing-arrow-up {
   position: fixed;
   bottom: 15px;
   right: 15px;
@@ -1973,7 +1973,7 @@ body.testing .testing-arrow-up {
   background-color: rgba(0, 0, 0, 0.1);
   z-index: 2000;
 }
-body.testing .testing-unit {
+.testing .testing-unit {
   background-color: #757575;
   height: 50px;
 }
