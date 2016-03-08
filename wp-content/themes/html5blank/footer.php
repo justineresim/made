@@ -1,13 +1,22 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
+				<div class="container">
+
+				<div class="social-link">
+					<a><i class="fa fa-facebook"></i></a>
+					<a><i class="fa fa-instagram"></i></a>
+					<a><i class="fa fa-envelope"></i></a>
+				</div>
+
+				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>  
 
 				<!-- copyright -->
 				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
 				</p>
 				<!-- /copyright -->
 
+				</div>
 			</footer>
 			<!-- /footer -->
 
@@ -25,6 +34,9 @@
 		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
 		ga('send', 'pageview');
 		</script>
+
+		<!-- jQuery Includes -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 	</body>
 </html>

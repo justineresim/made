@@ -20,7 +20,7 @@
   text-transform: uppercase;
 }
 
-.g-font-size-small, body.testing .g-container .testing-sidebar ul.testing-menu li a {
+.g-font-size-small {
   font-size: 0.9em;
   line-height: 1.4em;
 }
@@ -115,7 +115,7 @@ a.g-link-color-secondary:hover, a.g-link-color-secondary:focus, a.g-link-color-s
 }
 
 .border-radius {
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 .background-gradient {
@@ -174,18 +174,6 @@ a.g-link-color-secondary:hover, a.g-link-color-secondary:focus, a.g-link-color-s
   clear: both;
 }
 
-.g-container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-@media (min-width: 1200px) {
-  .g-container {
-    width: 1170px;
-  }
-}
-
 .g-image-responsive {
   max-width: 100%;
 }
@@ -230,27 +218,6 @@ a.g-link-color-secondary:hover, a.g-link-color-secondary:focus, a.g-link-color-s
 /*------------------------------------*\
     MAIN
 \*------------------------------------*/
-/* global box-sizing */
-*,
-*:after,
-*:before {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-/* html element 62.5% font-size for REM use */
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #444;
-}
-
 /* clear */
 .clear:before,
 .clear:after {
@@ -269,29 +236,6 @@ body {
 img {
   max-width: 100%;
   vertical-align: bottom;
-}
-
-a {
-  color: #444;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #444;
-}
-
-a:focus {
-  outline: 0;
-}
-
-a:hover,
-a:active {
-  outline: 0;
-}
-
-input:focus {
-  outline: 0;
-  border: 1px solid #04A4CC;
 }
 
 /*------------------------------------*\
@@ -460,13 +404,7 @@ a img.aligncenter {
 /* ==========================================================================
    General Styling
    ========================================================================== */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*:before,
+*, *:before,
 *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -478,12 +416,12 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 18px;
-  line-height: 1.3em;
+  font-size: 17px;
+  line-height: 1.5em;
   font-weight: normal;
   padding: 0;
   margin: 0;
@@ -506,13 +444,22 @@ textarea {
   line-height: inherit;
 }
 
+input:focus {
+  outline: 0;
+  border: 1px solid #04A4CC;
+}
+
 a {
-  color: #457485;
+  color: #903A3A;
   text-decoration: underline;
   cursor: pointer;
 }
+a:visited {
+  color: #592424;
+}
 a:hover, a:focus, a:active {
-  color: #2b4853;
+  color: #6c2b2b;
+  outline: 0;
 }
 a.g-disabled {
   opacity: .5;
@@ -526,17 +473,17 @@ hr {
 }
 
 p {
-  margin-bottom: 1.4em;
+  margin-bottom: 1em;
 }
 
 ul, ol {
-  margin: 0 0 1.4em 0;
+  margin: 0 0 1em 0;
 }
 ul li, ol li {
-  margin-bottom: 0.7em;
+  margin-bottom: 0.5em;
 }
 ul ul, ul ol, ol ul, ol ol {
-  margin: 0.7em 0 0 0;
+  margin: 0.5em 0 0 0;
 }
 
 /* ==========================================================================
@@ -558,10 +505,10 @@ ul ul, ul ol, ol ul, ol ol {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #457485;
-  border: 1px solid #457485;
-  border-radius: 2px;
-  font-family: "Roboto", sans-serif;
+  background-color: #903A3A;
+  border: 1px solid #903A3A;
+  border-radius: 0;
+  font-family: "Lato", sans-serif;
   color: #fff;
   text-decoration: none;
   outline: none;
@@ -581,8 +528,8 @@ ul ul, ul ol, ol ul, ol ol {
 }
 .g-btn:hover, .g-btn:focus, button.g-btn:hover, button.g-btn:focus {
   text-decoration: none;
-  background-color: #3c6574;
-  border: 1px solid #3c6574;
+  background-color: #7e3333;
+  border: 1px solid #7e3333;
   color: #fff;
   outline: 0;
   -webkit-box-shadow: none;
@@ -590,38 +537,53 @@ ul ul, ul ol, ol ul, ol ol {
 }
 .g-btn:active, .g-btn.g-active, button.g-btn:active, button.g-btn.g-active {
   text-decoration: none;
-  background-color: #345763;
-  border: 1px solid #345763;
+  background-color: #6c2b2b;
+  border: 1px solid #6c2b2b;
   color: #fff;
 }
 .g-btn.g-btn-secondary, button.g-btn.g-btn-secondary {
-  background-color: #103e50;
-  border: 1px solid #103e50;
+  background-color: #333;
+  border: 1px solid #333;
   color: #fff;
 }
 .g-btn.g-btn-secondary:hover, .g-btn.g-btn-secondary:focus, button.g-btn.g-btn-secondary:hover, button.g-btn.g-btn-secondary:focus {
-  background-color: #0c2e3b;
-  border: 1px solid #0c2e3b;
+  background-color: #262626;
+  border: 1px solid #262626;
   color: #fff;
 }
 .g-btn.g-btn-secondary:active, .g-btn.g-btn-secondary.g-active, button.g-btn.g-btn-secondary:active, button.g-btn.g-btn-secondary.g-active {
-  background-color: #081d26;
-  border: 1px solid #081d26;
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
   color: #fff;
 }
 .g-btn.g-btn-tertiary, button.g-btn.g-btn-tertiary {
   background-color: #fff;
-  border: 1px solid #103e50;
-  color: #103e50;
+  border: 1px solid #903A3A;
+  color: #903A3A;
 }
 .g-btn.g-btn-tertiary:hover, .g-btn.g-btn-tertiary:focus, button.g-btn.g-btn-tertiary:hover, button.g-btn.g-btn-tertiary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid #103e50;
-  color: #103e50;
+  background-color: #903A3A;
+  border: 1px solid #903A3A;
+  color: #fff;
 }
 .g-btn.g-btn-tertiary:active, .g-btn.g-btn-tertiary.g-active, button.g-btn.g-btn-tertiary:active, button.g-btn.g-btn-tertiary.g-active {
-  background-color: #b4b4b4;
-  border: 1px solid #b4b4b4;
+  background-color: #7e3333;
+  border: 1px solid #7e3333;
+  color: #fff;
+}
+.g-btn.g-btn-quaternary, button.g-btn.g-btn-quaternary {
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;
+}
+.g-btn.g-btn-quaternary:hover, .g-btn.g-btn-quaternary:focus, button.g-btn.g-btn-quaternary:hover, button.g-btn.g-btn-quaternary:focus {
+  background-color: #333;
+  border: 1px solid #333;
+  color: #fff;
+}
+.g-btn.g-btn-quaternary:active, .g-btn.g-btn-quaternary.g-active, button.g-btn.g-btn-quaternary:active, button.g-btn.g-btn-quaternary.g-active {
+  background-color: #262626;
+  border: 1px solid #262626;
   color: #fff;
 }
 .g-btn.g-disabled, button.g-btn.g-disabled {
@@ -640,11 +602,11 @@ ul ul, ul ol, ol ul, ol ol {
   border-right: 1px solid rgba(0, 0, 0, 0.15);
 }
 .g-btn-group :first-child {
-  border-radius: 2px 0 0 2px;
+  border-radius: 0 0 0 0;
   margin-left: 0;
 }
 .g-btn-group :last-child {
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 0 0 0;
   border-right: none;
 }
 
@@ -658,11 +620,11 @@ ul ul, ul ol, ol ul, ol ol {
   float: left;
 }
 .g-btn-toggle :first-child {
-  border-radius: 2px 0 0 2px;
+  border-radius: 0 0 0 0;
   margin-left: 0;
 }
 .g-btn-toggle :last-child {
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 0 0 0;
   margin-left: -1px;
 }
 
@@ -683,6 +645,14 @@ ul ul, ul ol, ol ul, ol ol {
 /* ==========================================================================
    Global Footer
    ========================================================================== */
+.footer {
+  background-color: #333;
+  padding: 2em 0;
+}
+.footer a {
+  color: #fff;
+}
+
 /* ==========================================================================
    Global Forms
    ========================================================================== */
@@ -690,13 +660,13 @@ form {
   margin-bottom: 20px;
 }
 form .g-error-state input {
-  border: 1px solid #c52020;
+  border: 1px solid #C36C11;
 }
 form .g-error-state input:focus {
-  border: 1px solid #c52020;
+  border: 1px solid #C36C11;
 }
 form .g-error-state p {
-  color: #c52020;
+  color: #C36C11;
   margin-top: 5px;
 }
 form .g-form-group {
@@ -763,10 +733,10 @@ form .g-form-horizontal .g-checkbox label, form .g-form-horizontal .g-radio labe
   display: block;
   width: 100%;
   padding: 5px 15px;
-  font-size: 18px;
-  line-height: 25.2px;
+  font-size: 17px;
+  line-height: 23.8px;
   border: 1px solid #ddd;
-  border-radius: 2px;
+  border-radius: 0;
   color: #757575;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -828,7 +798,7 @@ select.g-form-control {
 }
 .g-checkbox input[type=checkbox]:checked + label:before {
   content: "\2713";
-  color: #457485;
+  color: #903A3A;
   border: 1px solid #ddd;
   height: 20px;
   width: 20px;
@@ -877,7 +847,7 @@ select.g-form-control {
   border-radius: 50%;
 }
 .g-radio-container .g-radio:checked + .g-radio-label:before {
-  background: #457485;
+  background: #903A3A;
   box-shadow: inset 0px 0px 0px 3px #fff;
 }
 
@@ -893,8 +863,8 @@ select.g-form-control {
   height: 2.4em;
   margin: 0 0.2em;
   border-radius: 50%;
-  background-color: #457485;
-  border: 1px solid #457485;
+  background-color: #903A3A;
+  border: 1px solid #903A3A;
   color: #fff;
   text-align: center;
   line-height: 2.2em;
@@ -902,13 +872,13 @@ select.g-form-control {
 }
 .g-pagination a.g-active {
   background-color: #fff;
-  color: #457485;
-  border: 1px solid #457485;
+  color: #903A3A;
+  border: 1px solid #903A3A;
   pointer-events: none;
 }
 .g-pagination a:hover {
-  background-color: #345763;
-  border: 1px solid #345763;
+  background-color: #6c2b2b;
+  border: 1px solid #6c2b2b;
   text-decoration: none;
 }
 .g-pagination a:first-child {
@@ -953,48 +923,48 @@ table.g-table.g-table-bordered td, table.g-table.g-table-bordered td {
   border-top: 1px solid #ddd;
 }
 table.g-table.g-table-hover > tbody > tr:hover {
-  background-color: #edf3f6;
+  background-color: #f7ebeb;
 }
 
 /* ==========================================================================
    Type
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Serif", serif;
+  font-family: "Lato", sans-serif;
   color: #333;
   font-weight: bold;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #103e50;
+  color: #903A3A;
   text-decoration: none;
 }
-h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus {
+h1 a:hover, h1 a:focus, h1 a:active, h2 a:hover, h2 a:focus, h2 a:active, h3 a:hover, h3 a:focus, h3 a:active, h4 a:hover, h4 a:focus, h4 a:active, h5 a:hover, h5 a:focus, h5 a:active, h6 a:hover, h6 a:focus, h6 a:active {
   text-decoration: none;
-  color: #457485;
+  color: #6c2b2b;
 }
 
 h1 {
-  font-size: 2.5em;
-}
-
-h2 {
-  font-size: 2.2em;
-}
-
-h3 {
   font-size: 2em;
 }
 
-h4 {
+h2 {
   font-size: 1.8em;
 }
 
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
 h5 {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 h6 {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1047,7 +1017,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 1px;
 }
 
-*[class^="size"] {
+*[class*="size"] {
   width: 100%;
 }
 
@@ -1614,17 +1584,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .f-container {
   position: relative;
-  width: 101%;
+  margin-left: -5px;
+  margin-right: -5px;
   height: 100%;
-  margin-left: -1%;
 }
 .f-container.no-gutter {
   width: 100%;
   margin-left: 0;
+  margin-right: 0;
 }
 .f-container.no-gutter > div {
   padding-bottom: 0;
   padding-left: 0;
+  padding-right: 0;
 }
 @media (max-width: 480px) {
   .f-container {
@@ -1635,16 +1607,21 @@ h1, h2, h3, h4, h5, h6 {
 .f-container > div {
   position: absolute;
   padding-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .f-container > div .f-unit {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 @media (max-width: 480px) {
   .f-container > div .f-unit.testing-unit-f {
     min-height: 100px;
   }
+}
+.f-container > div .f-unit > .inner {
+  position: absolute;
 }
 @media (max-width: 480px) {
   .f-container > div {
@@ -1877,25 +1854,58 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    General page layout for site
    ========================================================================== */
-/* wrapper */
-.wrapper {
-  max-width: 1280px;
-  width: 95%;
-  margin: 0 auto;
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
   position: relative;
 }
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container:before, .container:after {
+  content: ' ';
+  display: table;
+}
+.container:after {
+  clear: both;
+}
 
-/* header */
-/* logo */
-/* nav */
-/* sidebar */
-/* footer */
+main, aside.sidebar {
+  padding-bottom: 4em;
+}
+
+.container.two-col main {
+  width: 60%;
+  float: left;
+}
+.container.two-col aside.sidebar {
+  width: 35%;
+  float: right;
+}
+
+.container.full-width aside.sidebar .sidebar-widget {
+  width: 48%;
+  float: left;
+}
+.container.full-width aside.sidebar .sidebar-widget + .sidebar-widget {
+  width: 48%;
+  float: right;
+}
+.container.full-width aside.sidebar:before, .container.full-width aside.sidebar:after {
+  content: ' ';
+  display: table;
+}
+.container.full-width aside.sidebar:after {
+  clear: both;
+}
+
 /* ==========================================================================
    Global Style Guide Page --- This file is just for this testing/style guide site - NOT part pf global CSS
    ========================================================================== */
-body.testing {
-  padding-bottom: 60px;
-}
 body.testing .g-container {
   position: relative;
 }
@@ -1922,13 +1932,12 @@ body.testing .g-container .testing-sidebar ul.testing-menu li {
 }
 body.testing .g-container .testing-sidebar ul.testing-menu li a {
   padding: 5px 10px;
-  border-radius: 2px;
+  border-radius: 0;
   display: inline-block;
   text-decoration: none;
 }
 body.testing .g-container .testing-sidebar ul.testing-menu li a.active {
-  background-color: #457485;
-  color: #fff;
+  text-decoration: underline;
 }
 @media (max-width: 920px) {
   body.testing .g-container .testing-sidebar {
@@ -1948,6 +1957,7 @@ body.testing pre {
   border-radius: 4px;
   display: block;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-weight: normal;
 }
 body.testing pre xmp {
   margin: 0;
@@ -1971,104 +1981,3 @@ body.testing .testing-unit {
 /* ==========================================================================
    Homepage Specific Styles
    ========================================================================== */
-/* ==========================================================================
-   Testing Pages styles
-   ========================================================================== */
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-.bg-animation {
-  background: linear-gradient(180deg, #3f9b98, #723f9b);
-  background-size: 400% 400%;
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
-}
-
-@-webkit-keyframes AnimationName2 {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes AnimationName2 {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes AnimationName2 {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.bg-animation2 {
-  background-image: url(http://www.hdwallpapersnew.net/wp-content/uploads/2015/12/cityscape-hd-wallpaper-download-free.jpg), -webkit-linear-gradient(left, #131356, #6787AE, white, #DDDC8E);
-  background-image: url(http://www.hdwallpapersnew.net/wp-content/uploads/2015/12/cityscape-hd-wallpaper-download-free.jpg), -moz-linear-gradient(left, #131356, #6787AE, white, #DDDC8E);
-  background-image: url(http://www.hdwallpapersnew.net/wp-content/uploads/2015/12/cityscape-hd-wallpaper-download-free.jpg), -o-linear-gradient(left, #131356, #6787AE, white, #DDDC8E);
-  background-image: url(http://www.hdwallpapersnew.net/wp-content/uploads/2015/12/cityscape-hd-wallpaper-download-free.jpg), linear-gradient(to right, #131356, #6787AE, white, #DDDC8E);
-  background-blend-mode: multiply;
-  background-size: cover;
-  position: relative;
-  opacity: 1;
-}
-
-.bg-animation3 {
-  background-image: url(http://www.hdwallpapersnew.net/wp-content/uploads/2015/12/cityscape-hd-wallpaper-download-free.jpg), -webkit-linear-gradient(left, white, #DDDC8E, #EDAA2E, #FF4D00);
-  background-image: url(http://www.hdwallpapersnew.net/wp-content/uploads/2015/12/cityscape-hd-wallpaper-download-free.jpg), -moz-linear-gradient(left, white, #DDDC8E, #EDAA2E, #FF4D00);
-  background-image: url(http://www.hdwallpapersnew.net/wp-content/uploads/2015/12/cityscape-hd-wallpaper-download-free.jpg), -o-linear-gradient(left, white, #DDDC8E, #EDAA2E, #FF4D00);
-  background-image: url(http://www.hdwallpapersnew.net/wp-content/uploads/2015/12/cityscape-hd-wallpaper-download-free.jpg), linear-gradient(to right, white, #DDDC8E, #EDAA2E, #FF4D00);
-  background-blend-mode: multiply;
-  background-size: cover;
-  -webkit-animation: AnimationName2 10s ease infinite;
-  -moz-animation: AnimationName2 10s ease infinite;
-  animation: AnimationName2 10s ease infinite;
-  position: relative;
-  opacity: 1;
-}

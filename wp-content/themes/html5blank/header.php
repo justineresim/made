@@ -22,7 +22,10 @@
         });
         </script>
 
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>	
+	
 	</head>
+	
 	<body <?php body_class(); ?>>
 
 		<!-- wrapper -->
@@ -30,6 +33,7 @@
 
 			<!-- header -->
 			<header class="header clear" role="banner">
+				<div class="container">
 
 					<!-- logo -->
 					<div class="logo">
@@ -41,10 +45,17 @@
 					<!-- /logo -->
 
 					<!-- nav -->
-					<nav class="nav" role="navigation">
+					<!-- <nav class="nav" role="navigation">
 						<?php html5blank_nav(); ?>
-					</nav>
+					</nav> -->
 					<!-- /nav -->
 
+					<nav>
+						<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+					</nav>
+
+					<?php get_template_part('searchform'); ?>
+
+				</div>
 			</header>
 			<!-- /header -->

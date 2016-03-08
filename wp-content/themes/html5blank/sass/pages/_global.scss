@@ -3,10 +3,6 @@
    ========================================================================== */
 
 body.testing{
-	padding-bottom: 60px;
-	header{
-
-	}
 	.g-container{
 		position: relative;
 		.testing-body-container{
@@ -30,10 +26,8 @@ body.testing{
 						border-radius: $border-radius;
 						display: inline-block;
 						text-decoration: none;
-						@extend .g-font-size-small;
 						&.active{
-						    background-color:$primary-1;
-	    					color: #fff;
+						    text-decoration: underline;
 						}
 					}
 				}
@@ -56,6 +50,7 @@ body.testing{
 		border-radius: 4px;
 		display: block;
 		font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+		font-weight: normal;
 		xmp{
 			margin: 0;
 		}

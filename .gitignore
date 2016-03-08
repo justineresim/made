@@ -1,4 +1,5 @@
 *.log
+*.scsss
 .htaccess
 sitemap.xml
 sitemap.xml.gz
@@ -12,6 +13,7 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
+wp-content/themes/html5blank/.sass-cache/
 
 /readme.html
 /license.txt

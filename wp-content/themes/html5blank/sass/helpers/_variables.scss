@@ -4,10 +4,10 @@
 
 /* ======================= Colours ======================== */
 
-$primary-1: rgb(69, 116, 133);
-$primary-2: rgb(16, 62, 80);
-$primary-3: rgb(109, 146, 160);
-$primary-4: rgb(2, 39, 53);
+$primary-1: #903A3A;
+$primary-2: #9E5F5F;
+$primary-3: #9E5F5F;
+$primary-4: #9E5F5F;
 
 $grey-1: #333;
 $grey-2: #757575;
@@ -17,7 +17,7 @@ $grey-4: #ddd;
 $border-color: $grey-4;
 $border-color-2: $grey-3;
 
-$error-color: #c52020;
+$error-color: #C36C11;
 
 $primary-bg-color: #fff;
 $secondary-bg-color: #f4f4f4;
@@ -32,31 +32,32 @@ $hr-color: $grey-4;
 $box-shadow: 1px 1px 1px $grey-2;
 
 //Default border radius
-$border-radius: 2px;
+$border-radius: 0;
 
 /* ======================= Links/Type ======================== */
 
 //Links
 $link-color: $primary-1;
-$link-hover-color: darken($primary-1, 15%);
+$link-hover-color: darken($primary-1, 10%);
+$link-visited-color: darken($primary-1, 15%);
 
 //Secondary link color
 $link-color-secondary: #fff;
 $link-hover-color-secondary: darken(#fff, 5%);
 
 //Type
-$heading-font: 'PT Serif', serif;
-$body-font: 'Roboto', sans-serif;
+$heading-font: 'Lato', sans-serif;
+$body-font: 'Lato', sans-serif;
 $text-color: $grey-1;
 $text-color-light: $grey-3;
 $text-color-dark: #000;
 $heading-color: $grey-1;
 
-$heading-link-color: $primary-2;
-$heading-hover-color: $primary-1;
+$heading-link-color: $primary-1;
+$heading-hover-color: darken($primary-1, 10%);
 
-$base-font-size: 18px;
-$base-line-height: 1.3em;
+$base-font-size: 17px;
+$base-line-height: 1.5em;
 
 $body-font-weight-bold: 700;
 
@@ -93,30 +94,43 @@ $btn-primary-active-border: darken($primary-1, 10%);
 $btn-primary-hover-color: #fff;
 
 //Secondary button
-$btn-secondary-bg: $primary-2;
-$btn-secondary-border: $primary-2;
+$btn-secondary-bg: $grey-1;
+$btn-secondary-border: $grey-1;
 $btn-secondary-color: #fff;
 
-$btn-secondary-hover-bg: darken($primary-2, 5%);
-$btn-secondary-hover-border: darken($primary-2, 5%);
+$btn-secondary-hover-bg: darken($grey-1, 5%);
+$btn-secondary-hover-border: darken($grey-1, 5%);
 $btn-secondary-hover-color: #fff;
 
-$btn-secondary-active-bg: darken($primary-2, 10%);
-$btn-secondary-active-border: darken($primary-2, 10%);
+$btn-secondary-active-bg: darken($grey-1, 10%);
+$btn-secondary-active-border: darken($grey-1, 10%);
 $btn-secondary-hover-color: #fff;
 
 //Tertiary button
 $btn-tertiary-bg: #fff;
-$btn-tertiary-border: $primary-2;
-$btn-tertiary-color: $primary-2;
+$btn-tertiary-border: $primary-1;
+$btn-tertiary-color: $primary-1;
 
-$btn-tertiary-hover-bg: rgba(0,0,0,.1);
-$btn-tertiary-hover-border: $primary-2;
-$btn-tertiary-hover-color: $primary-2;
+$btn-tertiary-hover-bg: $primary-1;
+$btn-tertiary-hover-border: $primary-1;
+$btn-tertiary-hover-color: #fff;
 
-$btn-tertiary-active-bg: $grey-3;
-$btn-tertiary-active-border: $grey-3;
+$btn-tertiary-active-bg: darken($primary-1, 5%);
+$btn-tertiary-active-border: darken($primary-1, 5%);
 $btn-tertiary-active-color: #fff;
+
+//Quaternary button
+$btn-quaternary-bg: #fff;
+$btn-quaternary-border: $grey-1;
+$btn-quaternary-color: $grey-1;
+
+$btn-quaternary-hover-bg: $grey-1;
+$btn-quaternary-hover-border: $grey-1;
+$btn-quaternary-hover-color: #fff;
+
+$btn-quaternary-active-bg: darken($grey-1, 5%);
+$btn-quaternary-active-border: darken($grey-1, 5%);
+$btn-quaternary-active-color: #fff;
 
 //Disabled button
 $btn-disabled-bg: $grey-4;

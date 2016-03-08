@@ -166,21 +166,11 @@ a.g-link-color-secondary{
 
 .g-clearfix{
 	&:before, &:after{
-	content: " ";
-	display: table;
+		content: " ";
+		display: table;
 	}
 	&:after{
 		clear:both;
-	}
-}
-
-.g-container{
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 10px;
-	padding-right: 10px;
-	@media (min-width: 1200px) {
-		width: 1170px;
 	}
 }
 

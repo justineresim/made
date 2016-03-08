@@ -2,12 +2,7 @@
    General Styling
    ========================================================================== */
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*:before,
+*, *:before,
 *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -49,6 +44,11 @@ textarea {
   line-height: inherit;
 }
 
+input:focus {
+  outline:0;
+  border:1px solid #04A4CC;
+}
+
 
 // Links
 
@@ -57,15 +57,18 @@ a {
   text-decoration: underline;
   cursor: pointer;
   @extend .transition;
+  &:visited {
+    color: $link-visited-color;
+  }
   &:hover, &:focus, &:active {
     color: $link-hover-color;
+    outline:0;
   }
   &.g-disabled {
     opacity: .5;
     pointer-events: none;
   }
 }
-
 
 
 hr{
@@ -75,18 +78,18 @@ hr{
 }
 
 p{
-  margin-bottom: 1.4em;
+  margin-bottom: 1em;
 }
 
 //lists
 
 ul, ol{
-  margin: 0 0 1.4em 0;
+  margin: 0 0 1em 0;
   li{
-    margin-bottom: 0.7em;
+    margin-bottom: 0.5em;
   }
   ul, ol{
-    margin: 0.7em 0 0 0;
+    margin: 0.5em 0 0 0;
   }
 }
 
