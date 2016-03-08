@@ -1304,7 +1304,7 @@
 
 <script>
 
-$(document).ready(function(){
+jQuery(document).ready(function($){
 
     //testing only
     $('.testing-scroll-up').click(function(e){

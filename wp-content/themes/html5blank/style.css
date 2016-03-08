@@ -204,11 +204,11 @@ a.g-link-color-secondary:hover, a.g-link-color-secondary:focus, a.g-link-color-s
    Global Mixins
    ========================================================================== */
 /*
-	Theme Name: HTML5 Blank
+	Theme Name: Mindfully Made Canada
 	Theme URI: http://html5blank.com
-	Description: HTML5 Blank WordPress Theme
+	Description: Mindfully Made Canada WordPress Theme
 	Version: 1.4.3
-	Author: Todd Motto (@toddmotto)
+	Author: Todd Motto (@toddmotto), Justine Lileikis
 	Author URI: http://toddmotto.com
 	Tags: Blank, HTML5, CSS3
 
@@ -761,7 +761,7 @@ select.g-form-control {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  background: url(/img/dropdown-arrows.png) no-repeat right #ffffff;
+  background: url(/wp-content/themes/made/img/dropdown-arrows.png) no-repeat right #ffffff;
   cursor: pointer;
 }
 
